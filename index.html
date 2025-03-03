@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List with Pomodoro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">To-Do List with Pomodoro</h1>
+        <div class="todo-app mb-4">
+            <input type="text" id="taskInput" class="form-control mb-2" placeholder="Add a new task...">
+            <button id="addTaskBtn" class="btn btn-primary mb-3">Add Task</button>
+            <button id="toggleCompletedBtn" class="btn btn-secondary mb-3">Hide Completed Tasks</button>
+            <ul id="taskList" class="list-group"></ul>
+        </div>
+
+        <div class="pomodoro-timer text-center">
+            <h2>Pomodoro Timer</h2>
+            <input type="number" id="pomodoroDuration" class="form-control mb-2" placeholder="Set minutes..." min="5" step="5">
+            <div id="timer" class="display-4 mb-3">25:00</div>
+            <button id="startTimerBtn" class="btn btn-success">Start</button>
+            <button id="pauseTimerBtn" class="btn btn-warning">Pause</button>
+            <button id="resetTimerBtn" class="btn btn-secondary">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
